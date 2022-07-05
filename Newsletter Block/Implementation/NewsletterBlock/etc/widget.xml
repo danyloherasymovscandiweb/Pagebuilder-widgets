@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_NewsletterBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_NewsletterBlock
+ * @author   Danylo Herasymov <d.herasymov@scandiweb.com>
+ */
+-->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Scandiweb\NewsletterBlock\Block\Widget\NewsletterBlock" id="NewsletterBlock_block" placeholder_image="Scandiweb_NewsletterBlock::NewsletterBlock_block.png">
+        <label>Newsletter Block</label>
+        <description>Newsletter Block</description>
+        <parameters>
+            <parameter name="block_title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Heading text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="block_subtitle" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Additional text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="input_text" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Text to display in input field</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="submit_button_text" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Text for the submit button</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="rules_text" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>Text on agreement with rules</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="rules_first_url" xsi:type="text" required="true" visible="true" sort_order="60">
+                <label>Terms and conditions 1st URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="rules_second_url" xsi:type="text" required="true" visible="true" sort_order="70">
+                <label>Terms and conditions 2nd URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

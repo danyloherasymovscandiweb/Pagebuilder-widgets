@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_CategoryBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_CategoryBlock
+ * @author   Danylo Herasymov <d.herasymov@scandiweb.com>
+ */
+-->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Scandiweb\CategoryBlock\Block\Widget\CategoryBlock" id="category_block" placeholder_image="Scandiweb_CategoryBlock::category_cards_icon.png">
+        <label>CategoryBlock</label>
+        <description>Category Block - Products</description>
+        <parameters>
+            <parameter name="block_title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Heading text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="block_subtitle" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Additional text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="block_image" xsi:type="block" required="true" visible="true" sort_order="30">
+                <label>Block Image</label>
+                <description>Reccomended image size: 560x650px</description>
+                <block class="Scandiweb\CategoryBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="block_image_url" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Banner Button URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="block_button_text" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>Banner Button Text</label>
+            </parameter>
+            <parameter name="block_button_url" xsi:type="text" required="true" visible="true" sort_order="60">
+                <label>Banner Button URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="first_category_image" xsi:type="block" required="true" visible="true" sort_order="70">
+                <label>First Category Image</label>
+                <description>Reccomended image size: 560x340px</description>
+                <block class="Scandiweb\CategoryBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="first_category_url" xsi:type="text" required="true" visible="true" sort_order="80">
+                <label>First Category URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="first_category_caption" xsi:type="text" required="true" visible="true" sort_order="90">
+                <label>First Category Caption</label>
+            </parameter>
+            <parameter name="second_category_image" xsi:type="block" required="true" visible="true" sort_order="100">
+                <label>Second Category Image</label>
+                <description>Reccomended image size: 560x340px</description>
+                <block class="Scandiweb\CategoryBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="second_category_url" xsi:type="text" required="true" visible="true" sort_order="110">
+                <label>Second Category URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="second_category_caption" xsi:type="text" required="true" visible="true" sort_order="120">
+                <label>Second Category Caption</label>
+            </parameter>
+            <parameter name="third_category_image" xsi:type="block" required="true" visible="true" sort_order="130">
+                <label>Third Category Image</label>
+                <description>Reccomended image size: 560x340px</description>
+                <block class="Scandiweb\CategoryBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="third_category_url" xsi:type="text" required="true" visible="true" sort_order="140">
+                <label>Third Category URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="third_category_caption" xsi:type="text" required="true" visible="true" sort_order="150">
+                <label>Third Category Caption</label>
+            </parameter>
+            <parameter name="fourth_category_image" xsi:type="block" required="true" visible="true" sort_order="160">
+                <label>Fourth Category Image</label>
+                <description>Reccomended image size: 560x340px</description>
+                <block class="Scandiweb\CategoryBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="fourth_category_url" xsi:type="text" required="true" visible="true" sort_order="170">
+                <label>Fourth Category URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+            <parameter name="fourth_category_caption" xsi:type="text" required="true" visible="true" sort_order="180">
+                <label>Fourth Category Caption</label>
+            </parameter>
+            <parameter name="shop_button_text" xsi:type="text" required="true" visible="true" sort_order="190">
+                <label>Banner Button Text</label>
+            </parameter>
+            <parameter name="shop_button_url" xsi:type="text" required="true" visible="true" sort_order="200">
+                <label>Banner Button URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

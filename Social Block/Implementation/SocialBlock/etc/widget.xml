@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_SocialBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_SocialBlock
+ * @author   Danylo Herasymov <danylo.herasymov@scandiweb.com>
+ */
+-->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Scandiweb\SocialBlock\Block\Widget\SocialBlock" id="social_block" placeholder_image="Scandiweb_SocialBlock::social_block_icon.png">
+        <label>Social Block</label>
+        <description>Scandiweb social block</description>
+        <parameters>
+            <parameter name="block_title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Heading text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="block_slogan" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Slogan text</label>
+                <value>Be cool!</value>
+            </parameter>
+            <parameter name="facebook_title" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Facebook Text</label>
+            </parameter>
+            <parameter name="facebook_link" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Facebook Link</label>
+            </parameter>
+            <parameter name="tiktok_title" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>TikTok Text</label>
+            </parameter>
+            <parameter name="tiktok_link" xsi:type="text" required="true" visible="true" sort_order="60">
+                <label>TikTok Link</label>
+            </parameter>
+            <parameter name="instagram_title" xsi:type="text" required="true" visible="true" sort_order="70">
+                <label>Instagram Text</label>
+            </parameter>
+            <parameter name="instagram_link" xsi:type="text" required="true" visible="true" sort_order="80">
+                <label>Instagram Link</label>
+            </parameter>
+            <parameter name="youtube_title" xsi:type="text" required="true" visible="true" sort_order="90">
+                <label>YouTube Text</label>
+            </parameter>
+            <parameter name="youtube_link" xsi:type="text" required="true" visible="true" sort_order="100">
+                <label>YouTube Link</label>
+            </parameter>
+            <parameter name="twitter_title" xsi:type="text" required="true" visible="true" sort_order="110">
+                <label>Twitter Text</label>
+            </parameter>
+            <parameter name="twitter_link" xsi:type="text" required="true" visible="true" sort_order="120">
+                <label>Twitter Link</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

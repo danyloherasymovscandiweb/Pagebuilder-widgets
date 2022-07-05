@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Scandiweb_SocialBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_SocialBlock
+ * @author   Danylo Herasymov <danylo.herasymov@scandiweb.com>
+ */
+
+/** @var $block Scandiweb\SocialBlock\Block\Widget\SocialBlock */
+/** @var $escaper Magento\Framework\Escaper */
+?>
+
+<widget type="SocialBlock"
+        block-title="<?= $escaper->escapeHtml($block->getBlockTitle()) ?>"
+        block-slogan="<?= $escaper->escapeHtml($block->getBlockSlogan()) ?>"
+        facebook-title="<?= $escaper->escapeHtml($block->getFacebookTitle()) ?>"
+        facebook-link="<?= $escaper->escapeHtml($block->getFacebookLink()) ?>"
+        tiktok-title="<?= $escaper->escapeHtml($block->getTiktokTitle()) ?>"
+        tiktok-link="<?= $escaper->escapeHtml($block->getTiktokLink()) ?>"
+        instagram-title="<?= $escaper->escapeHtml($block->getInstagramTitle()) ?>"
+        instagram-link="<?= $escaper->escapeHtml($block->getInstagramLink()) ?>"
+        youtube-title="<?= $escaper->escapeHtml($block->getYoutubeTitle()) ?>"
+        youtube-link="<?= $escaper->escapeHtml($block->getYoutubeLink()) ?>"
+        twitter-title="<?= $escaper->escapeHtml($block->getTwitterTitle()) ?>"
+        twitter-link="<?= $escaper->escapeHtml($block->getTwitterLink()) ?>"
+/>

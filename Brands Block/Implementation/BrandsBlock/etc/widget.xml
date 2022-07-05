@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_BrandsBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_BrandsBlock
+ * @author   Danylo Herasymov <danylo.herasymov@scandiweb.com>
+ */
+-->
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Scandiweb\BrandsBlock\Block\Widget\BrandsBlock" id="brands_block" placeholder_image="Scandiweb_BrandsBlock::brands_block_icon.png">
+        <label>Brands Block</label>
+        <description>Block of featured brands</description>
+        <parameters>
+            <parameter name="block_title" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Heading text</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="first_brand_link" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>First Brand Link</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="first_brand_image" xsi:type="block" required="true" visible="true" sort_order="30">
+                <label>First Brand Image</label>
+                <description>Reccomended image dimension: square (height = width)</description>
+                <block class="Scandiweb\BrandsBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="second_brand_link" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>Second Brand Link</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="second_brand_image" xsi:type="block" required="true" visible="true" sort_order="50">
+                <label>Second Brand Image</label>
+                <description>Reccomended image dimension: square (height = width)</description>
+                <block class="Scandiweb\BrandsBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="third_brand_link" xsi:type="text" required="true" visible="true" sort_order="60">
+                <label>Third Brand Link</label>
+                <value>Test</value>
+            </parameter>
+            <parameter name="third_brand_image" xsi:type="block" required="true" visible="true" sort_order="70">
+                <label>Third Brand Image</label>
+                <description>Reccomended image dimension: square (height = width)</description>
+                <block class="Scandiweb\BrandsBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="button_text" xsi:type="text" required="true" visible="true" sort_order="80">
+                <label>Button Text</label>
+            </parameter>
+            <parameter name="button_link" xsi:type="text" required="true" visible="true" sort_order="90">
+                <label>Button URL</label>
+                <description>Redirect URL on click</description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

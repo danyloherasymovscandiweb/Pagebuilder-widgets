@@ -1,0 +1,36 @@
+<?php
+/**
+ * Scandiweb_CategoryBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_CategoryBlock
+ * @author   Danylo Herasymov <d.herasymov@scandiweb.com>
+ */
+
+/** @var $block Scandiweb\CategoryBlock\Block\Widget\CategoryBlock */
+/** @var $escaper Magento\Framework\Escaper */
+?>
+
+<widget type="CategoryBlock"
+        block-title="<?= $escaper->escapeHtml($block->getBlockTitle()) ?>"
+        block-subtitle="<?= $escaper->escapeHtml($block->getBlockSubtitle()) ?>"
+        block-image="<?= $escaper->escapeHtml($block->getBlockImage()) ?>"
+        block-image-url="<?= $escaper->escapeHtml($block->getBlockImageUrl()) ?>"
+        block-button-text="<?= $escaper->escapeHtml($block->getBlockButtonText()) ?>"
+        block-button-url="<?= $escaper->escapeHtml($block->getBlockButtonUrl()) ?>"
+        first-category-image="<?= $escaper->escapeHtml($block->getFirstCategoryImage()) ?>"
+        first-category-url="<?= $escaper->escapeHtml($block->getFirstCategoryUrl()) ?>"
+        first-category-caption="<?= $escaper->escapeHtml($block->getFirstCategoryCaption()) ?>"
+        second-category-image="<?= $escaper->escapeHtml($block->getSecondCategoryImage()) ?>"
+        second-category-url="<?= $escaper->escapeHtml($block->getSecondCategoryUrl()) ?>"
+        second-category-caption="<?= $escaper->escapeHtml($block->getSecondCategoryCaption()) ?>"
+        third-category-image="<?= $escaper->escapeHtml($block->getThirdCategoryImage()) ?>"
+        third-category-url="<?= $escaper->escapeHtml($block->getThirdCategoryUrl()) ?>"
+        third-category-caption="<?= $escaper->escapeHtml($block->getThirdCategoryCaption()) ?>"
+        fourth-category-image="<?= $escaper->escapeHtml($block->getFourthCategoryImage()) ?>"
+        fourth-category-url="<?= $escaper->escapeHtml($block->getFourthCategoryUrl()) ?>"
+        fourth-category-caption="<?= $escaper->escapeHtml($block->getFourthCategoryCaption()) ?>"
+        shop-button-text="<?= $escaper->escapeHtml($block->getShopButtonText()) ?>"
+        shop-button-url="<?= $escaper->escapeHtml($block->getShopButtonUrl()) ?>"
+
+/>

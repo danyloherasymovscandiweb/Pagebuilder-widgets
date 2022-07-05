@@ -1,0 +1,25 @@
+<?php
+/**
+ * Scandiweb_BrandsBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_BrandsBlock
+ * @author   Danylo Herasymov <danylo.herasymov@scandiweb.com>
+ */
+
+
+/** @var $block Scandiweb\BrandsBlock\Block\Widget\BrandsBlock */
+/** @var $escaper Magento\Framework\Escaper */
+?>
+
+<widget type="BrandsBlock"
+        block-title="<?= $escaper->escapeHtml($block->getBlockTitle()) ?>"
+        first-brand-link="<?= $escaper->escapeHtml($block->getFirstBrandLink()) ?>"
+        first-brand-image="<?= $escaper->escapeHtml($block->getFirstBrandImage()) ?>"
+        second-brand-link="<?= $escaper->escapeHtml($block->getSecondBrandLink()) ?>"
+        second-brand-image="<?= $escaper->escapeHtml($block->getSecondBrandImage()) ?>"
+        third-brand-link="<?= $escaper->escapeHtml($block->getThirdBrandLink()) ?>"
+        third-brand-image="<?= $escaper->escapeHtml($block->getThirdBrandImage()) ?>"
+        button-link="<?= $escaper->escapeHtml($block->getButtonLink()) ?>"
+        button-text="<?= $escaper->escapeHtml($block->getButtonText()) ?>"
+/>

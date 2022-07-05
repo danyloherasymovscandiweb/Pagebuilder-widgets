@@ -1,0 +1,22 @@
+<?php
+/**
+ * Scandiweb_NewsletterBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_NewsletterBlock
+ * @author   Danylo Herasymov <d.herasymov@scandiweb.com>
+ */
+
+/** @var $block Scandiweb\NewsletterBlock\Block\Widget\NewsletterBlock */
+/** @var $escaper Magento\Framework\Escaper */
+?>
+
+<widget type="NewsletterBlock"
+        block-title="<?= $escaper->escapeHtml($block->getBlockTitle()) ?>"
+        block-subtitle="<?= $escaper->escapeHtml($block->getBlockSubtitle()) ?>"
+        input-text="<?= $escaper->escapeHtml($block->getInputText()) ?>"
+        submit-button-text="<?= $escaper->escapeHtml($block->getSubmitButtonText()) ?>"
+        rules-text="<?= $escaper->escapeHtml($block->getRulesText()) ?>"
+        rules-firts-url="<?= $escaper->escapeHtml($block->getRulesFirstUrl()) ?>"
+        rules-second-url="<?= $escaper->escapeHtml($block->getRulesSecondUrl()) ?>"
+/>
