@@ -1,0 +1,42 @@
+<!--
+/**
+ * Scandiweb_PageBuilderBrandsBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderBrandsBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<!-- ScandiPWA Rendering Example -->
+<widget type="BrandsBlock"
+        data-bind="attr: {
+        'data-block-title': data.block_title.html,
+        'data-first-brand-img-src': data.first_brand_img.attributes().src,
+        'data-first-brand-img-alt': data.first_brand_img.attributes().alt,
+        'data-first-brand-img-title': data.first_brand_img.attributes().title,
+        'data-first-brand-url': data.first_brand_url.attributes().value,
+        'data-second-brand-img-src': data.second_brand_img.attributes().src,
+        'data-second-brand-img-alt': data.second_brand_img.attributes().alt,
+        'data-second-brand-img-title': data.second_brand_img.attributes().title,
+        'data-second-brand-url': data.second_brand_url.attributes().value,
+        'data-third-brand-img-src': data.third_brand_img.attributes().src,
+        'data-third-brand-img-alt': data.third_brand_img.attributes().alt,
+        'data-third-brand-img-title': data.third_brand_img.attributes().title,
+        'data-third-brand-url': data.third_brand_url.attributes().value,
+        'data-button-text': data.button_text.html,
+        'data-button-url': data.button_url.attributes().value
+    }"
+>
+    <div attr="data.main.attributes">
+        <div attr="data.block_title.attributes" html="data.block_title.html"></div>
+        <div attr="data.first_brand_url.attributes"></div>
+        <div attr="data.first_brand_img.attributes"></div>
+        <div attr="data.second_brand_url.attributes"></div>
+        <div attr="data.second_brand_img.attributes"></div>
+        <div attr="data.third_brand_url.attributes"></div>
+        <div attr="data.third_brand_img.attributes"></div>
+        <div attr="data.button_text.attributes" html="data.button_text.html"></div>
+        <div attr="data.button_url.attributes"></div>
+    </div>
+</widget>

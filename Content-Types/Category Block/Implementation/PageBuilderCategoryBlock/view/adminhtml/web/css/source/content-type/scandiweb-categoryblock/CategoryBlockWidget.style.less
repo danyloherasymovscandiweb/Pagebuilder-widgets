@@ -1,0 +1,297 @@
+.CategoryBlock {
+    max-width: 1380px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+
+    &-ColumnGroup {
+        display: flex;
+        flex-flow: wrap;
+        min-height: inherit;
+    }
+
+    &-Column {
+        box-sizing: border-box;
+        transition: width 1s ease;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        background-position: left top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 0px;
+
+        &FirstGrid {
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            background-position: left top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            border-style: none;
+            border-width: 1px;
+            border-radius: 0px;
+            width: 30%;
+            margin: 175px 0px -50px -50px;
+            padding: 0px;
+            align-self: stretch;
+        }
+
+        &SecondGrid {
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            background-position: left top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            border-style: none;
+            border-width: 1px;
+            border-radius: 0px;
+            width: 30%;
+            margin: 175px 0px -50px 15px;
+            padding: 0px;
+            align-self: stretch;
+        }
+
+        &Hidden {
+            width: 40%;
+        }
+
+        &Visible {
+            width: 60%;
+            margin: 0px 0px -150px;
+            padding: 0px;
+            align-self: flex-end;
+        }
+
+        &Inv {
+            visibility: hidden;
+        }
+
+        &Banner {
+            width: 40%;
+            margin: 0px;
+            padding: 0px;
+            align-self: stretch;
+        }
+    }
+
+    &-Title {
+        font-size: 48px;
+        line-height: 48px;
+        font-family: inherit;
+
+        &Block {
+            border-style: none;
+            border-width: 1px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px 0px 0px 30px;
+        }
+
+        &P {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &-Subtitle {
+        font-size: 24px;
+        font-family: inherit;
+
+        &P {
+            margin-block-end: 1rem;
+            margin-block-start: 0;
+        }
+    }
+
+    &-Image {
+        border-style: none;
+        border-width: 1px;
+        border-radius: 0px;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+        &Placeholder {
+            padding: 0px;
+            border-style: none;
+            display: block;
+            border-radius: 10px;
+            height: 100%;
+        }
+    }
+
+    &-Button {
+        background-color: gray;
+        border: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: var(--button-border-radius);
+        transition-property: background-color,color,border;
+        will-change: background-color,color,border;
+        transition-timing-function: ease-out;
+        transition-duration: .25s;
+        padding: 10px 30px;
+        font-size: 21px;
+        font-family: inherit;
+
+        &Holder {
+            border-style: none;
+            border-width: 1px;
+            border-radius: 10px;
+            margin: 40px 0px 0px 25px;
+            padding: 0px;
+            position: absolute;
+            inset-block-start: 0;
+            display: block;
+        }
+
+        &Item {
+            display: inline-block;
+        }
+
+        &Text {
+            color: white;
+        }
+    }
+
+    &-Category {
+        &Holder {
+            text-align: center;
+            margin: 0px 0px 15px;
+            padding: 0px;
+            border-style: none;
+            display: flex;
+            background-color: gray;
+        }
+
+        &Holder:hover &Caption {
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        &Holder:hover &Image {
+            opacity: 1;
+            transition: .5s ease;
+        }
+
+        &Image {
+            border-style: none;
+            border-width: 1px;
+            border-radius: 0px;
+            max-width: 100%;
+            height: 100%;
+            opacity: 0.4;
+
+            &Link {
+                height: 100%;
+                display: block;
+            }
+        }
+
+        &Caption {
+            &First{
+                left: 51%;
+                top: 35%;
+                position: absolute;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                font-size: 32px;
+                font-family: inherit;
+                transform: translate(-50%,-50%);
+                line-height: normal;
+            }
+
+            &Second{
+                left: 51%;
+                top: 62%;
+                position: absolute;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                font-size: 32px;
+                font-family: inherit;
+                transform: translate(-50%,-50%);
+                line-height: normal;
+            }
+
+            &Third{
+                left: 82%;
+                top: 35%;
+                position: absolute;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                font-size: 32px;
+                font-family: inherit;
+                transform: translate(-50%,-50%);
+                line-height: normal;
+            }
+
+            &Fourth{
+                left: 82%;
+                top: 62%;
+                position: absolute;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                font-size: 32px;
+                font-family: inherit;
+                transform: translate(-50%,-50%);
+                line-height: normal;
+            }
+        }
+    }
+
+    &-ShopButton {
+        text-align: center;
+        background-color: gray;
+        border: 0;
+        font-weight: 700;
+        font-family: inherit;
+        text-transform: uppercase;
+        border-radius: var(--button-border-radius);
+        transition-property: background-color,color,border;
+        will-change: background-color,color,border;
+        transition-timing-function: ease-out;
+        transition-duration: .25s;
+        padding: 35px 125px;
+        font-size: 31px;
+        width: 100%;
+
+        &Holder {
+            text-align: center;
+            border-style: none;
+            border-width: 1px;
+            border-radius: 5px;
+            margin: 100px 0px;
+            padding: 0px;
+        }
+
+        &Item {
+            display: inline-block;
+        }
+
+        &Text {
+            color: white;
+        }
+    }
+}

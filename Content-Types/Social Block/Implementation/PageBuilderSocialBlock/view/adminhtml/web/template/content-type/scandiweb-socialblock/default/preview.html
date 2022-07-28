@@ -1,0 +1,130 @@
+<!--
+/**
+ * Scandiweb_PageBuilderSocialBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderSocialBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <div translate="'Social Block'"></div>
+    <div class="SocialBlock-SocialMedia">
+        <div class="SocialBlock-SocialMediaTitle">
+            <span attr="data.block_title.attributes"
+                data-bind="liveEdit: { field: 'block_title', placeholder: $t('Enter Block Title') }"
+            ></span>
+        </div>
+        <div class="SocialBlock-SocialMediaSlogan">
+            <span attr="data.block_slogan.attributes"
+                data-bind="liveEdit: { field: 'block_slogan', placeholder: $t('Enter Block Slogan') }"
+            ></span>
+        </div>
+        <div class="SocialBlock-SocialMediaList">
+            <div class="SocialBlock-SocialMediaListWrapper">
+                <div class="SocialBlock-SocialMediaListContent">
+                    <div class="SocialBlock-SocialMediaListFigure">
+                        <a attr="data.first_url.attributes"
+                            data-bind="href: data.first_url.attributes().value"
+                        >
+                        <img
+                            attr="data.first_icon.attributes"
+                        />
+                        </a>
+                    </div>
+                    <p class="SocialBlock-SocialMediaListTextHolder">
+                        <strong>
+                            <span
+                                  attr="data.first_caption.attributes"
+                                  data-bind="liveEdit: { field: 'first_caption', placeholder: $t('Enter First Caption') }">
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="SocialBlock-SocialMediaListContent">
+                    <div class="SocialBlock-SocialMediaListFigure">
+                        <a attr="data.second_url.attributes"
+                            data-bind="href: data.second_url.attributes().value"
+                        >
+                        <img
+                            attr="data.second_icon.attributes"
+                        />
+                        </a>
+                    </div>
+                    <p class="SocialBlock-SocialMediaListTextHolder">
+                        <strong>
+                            <span
+                                  attr="data.second_caption.attributes"
+                                  data-bind="liveEdit: { field: 'second_caption', placeholder: $t('Enter Second Caption') }">
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="SocialBlock-SocialMediaListContent">
+                    <div class="SocialBlock-SocialMediaListFigure">
+                        <a attr="data.third_url.attributes"
+                            data-bind="href: data.third_url.attributes().value"
+                        >
+                        <img
+                            attr="data.third_icon.attributes"
+                        />
+                        </a>
+                    </div>
+                    <p class="SocialBlock-SocialMediaListTextHolder">
+                        <strong>
+                            <span
+                                  attr="data.third_caption.attributes"
+                                  data-bind="liveEdit: { field: 'third_caption', placeholder: $t('Enter Third Caption') }">
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="SocialBlock-SocialMediaListContent">
+                    <div class="SocialBlock-SocialMediaListFigure">
+                        <a attr="data.fourth_url.attributes"
+                            data-bind="href: data.fourth_url.attributes().value"
+                        >
+                        <img
+                            attr="data.fourth_icon.attributes"
+                        />
+                        </a>
+                    </div>
+                    <p class="SocialBlock-SocialMediaListTextHolder">
+                        <strong>
+                            <span
+                                  attr="data.fourth_caption.attributes"
+                                  data-bind="liveEdit: { field: 'fourth_caption', placeholder: $t('Enter Fourth Caption') }">
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="SocialBlock-SocialMediaListContent">
+                    <div class="SocialBlock-SocialMediaListFigure">
+                        <a attr="data.fifth_url.attributes"
+                            data-bind="href: data.fifth_url.attributes().value"
+                        >
+                        <img
+                            attr="data.fifth_icon.attributes"
+                        />
+                        </a>
+                    </div>
+                    <p class="SocialBlock-SocialMediaListTextHolder">
+                        <strong>
+                            <span
+                                  attr="data.fifth_caption.attributes"
+                                  data-bind="liveEdit: { field: 'fifth_caption', placeholder: $t('Enter Fifth Caption') }">
+                            </span>
+                        </strong>
+                    </p>
+                </div>
+             </div>
+        </div>
+    </div>
+    <render args="getOptions().template" />
+</div>

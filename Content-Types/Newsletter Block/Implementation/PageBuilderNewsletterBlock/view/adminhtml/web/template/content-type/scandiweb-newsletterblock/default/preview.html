@@ -1,0 +1,94 @@
+<!--
+/**
+ * Scandiweb_PageBuilderNewsletterBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderNewsletterBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <div translate="'Newsletter Block'"></div>
+    <div class="Newsletter">
+        <div class="Newsletter-Wrapper">
+            <div class="Newsletter-TitleWrapper">
+                <span class="Newsletter-Title"
+                      attr="data.block_title.attributes"
+                      data-bind="liveEdit: { field: 'block_title', placeholder: $t('Enter Block Title') }">
+                </span>
+            </div>
+            <div class="Newsletter-SubtitleWrapper">
+                <div class="Newsletter-SubtitlePlaceholder">
+                    <p class="Newsletter-SubtitleText"
+                       attr="data.block_subtitle.attributes"
+                       data-bind="liveEdit: { field: 'block_subtitle', placeholder: $t('Enter Block Subitle') }">
+                    </p>
+                </div>
+            </div>
+            <div class="Newsletter-ActionsWrapper">
+                <div class="Newsletter-Actions">
+                    <form class="Newsletter-Form">
+                        <div class="Newsletter-FormIcon">
+                            <img attr="data.email_icon.attributes">
+                        </div>
+                        <div class="Newsletter-FormFieldEmail">
+                            <input
+                              class="Newsletter-FormFieldInput"
+                              attr="data.input_text.attributes"
+                              data-bind="liveEdit: { field: 'input_text', placeholder: $t('Enter Input Text') }"
+                            />
+                        </div>
+                        <div class="Newsletter-FormSubmit">
+                            <button class="Newsletter-FormSubmitButton" attr="data.submit_button_text.attributes"
+                                      data-bind="liveEdit: { field: 'submit_button_text', placeholder: $t('Enter Submit Button Text') }">
+                            </button>
+                        </div>
+                    </form>
+                    <div class="Newsletter-Line"></div>
+                    <div class="Newsletter-TACWrapper">
+                        <div class="Newsletter-CheckboxField">
+                            <label htmlFor="termsAndConditions"
+                                   class="Newsletter-Label">
+                                <input type="checkbox"
+                                       class="Newsletter-Checkbox"
+                                >
+                                <span class="Newsletter-Checkmark"></span>
+                            </label>
+                        </div>
+                        <label htmlFor="email"
+                               class="Newsletter-TACLabel">
+                               <span class="Newsletter-TACText"
+                                      attr="data.rules_general_text.attributes"
+                                      data-bind="liveEdit: { field: 'rules_general_text', placeholder: $t('Enter Rules General Text') }"
+                                >
+                                </span>
+                                <a class="Newsletter-TACLink"
+                                    data-bind="href: data.rules_first_url.attributes().value"
+                                >
+                                    <span attr="data.rules_first_text.attributes"
+                                        data-bind="liveEdit: { field: 'rules_first_text', placeholder: $t('Enter First Rules Text') }"
+                                    >
+                                    </span>
+                                </a>
+                                <a class="Newsletter-TACLink"
+                                    data-bind="href: data.rules_second_url.attributes().value"
+                                >
+                                    <span attr="data.rules_second_text.attributes"
+                                        data-bind="liveEdit: { field: 'rules_second_text', placeholder: $t('Enter Second Rules Text') }"
+                                    >
+                                    </span>
+                                </a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <render args="getOptions().template" />
+</div>

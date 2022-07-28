@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_PageBuilderNewsletterBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderNewsletterBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="scandiweb_newsletterblock"
+          label="NewsletterBlock"
+          menu_section="media"
+          component="Magento_PageBuilder/js/content-type"
+          preview_component="Scandiweb_PageBuilderNewsletterBlock/js/content-type/scandiweb-newsletterblock/preview"
+          master_component="Magento_PageBuilder/js/content-type/master"
+          form="pagebuilder_scandiweb_newsletterblock_form"
+          icon="icon-pagebuilder-banner"
+          sortOrder="21"
+          translate="label">
+        <children default_policy="deny"/>
+        <parents default_policy="deny">
+            <parent name="row" policy="allow"/>
+            <parent name="column" policy="allow"/>
+        </parents>
+        <appearances>
+            <appearance name="default"
+                        default="true"
+                        preview_template="Scandiweb_PageBuilderNewsletterBlock/content-type/scandiweb-newsletterblock/default/preview"
+                        master_template="Scandiweb_PageBuilderNewsletterBlock/content-type/scandiweb-newsletterblock/default/master"
+                        reader="Magento_PageBuilder/js/master-format/read/configurable">
+                <elements>
+                    <element name="main">
+                        <style name="text_align" source="text_align"/>
+                        <style name="border" source="border_style" converter="Magento_PageBuilder/js/converter/style/border-style"/>
+                        <style name="border_color" source="border_color"/>
+                        <style name="background_color" source="background_color"/>
+                        <style name="background_image" source="background_image" converter="Magento_PageBuilder/js/converter/style/background-image" preview_converter="Magento_PageBuilder/js/converter/style/preview/background-image"/>
+                        <style name="border_width" source="border_width" converter="Magento_PageBuilder/js/converter/style/border-width"/>
+                        <style name="border_radius" source="border_radius" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
+                        <style name="margins" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/margins" converter="Magento_PageBuilder/js/converter/style/margins"/>
+                        <style name="padding" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/paddings" converter="Magento_PageBuilder/js/converter/style/paddings"/>
+                        <style name="display" source="display" converter="Magento_PageBuilder/js/converter/style/display" preview_converter="Magento_PageBuilder/js/converter/style/preview/display"/>
+                        <attribute name="name" source="data-content-type"/>
+                        <attribute name="appearance" source="data-appearance"/>
+                        <css name="css_classes"/>
+                    </element>
+                    <element name="block_title">
+                        <html name="block_title" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="block_subtitle">
+                        <html name="block_subtitle" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="email_icon">
+                        <attribute name="email_icon_src" source="src" converter="Magento_PageBuilder/js/converter/attribute/src" preview_converter="Magento_PageBuilder/js/converter/attribute/preview/src"/>
+                        <attribute name="email_icon_alt" source="alt"/>
+                        <attribute name="email_icon_title" source="title"/>
+                    </element>
+                    <element name="input_text">
+                        <html name="input_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="submit_button_text">
+                        <html name="submit_button_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="rules_general_text">
+                        <html name="rules_general_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="rules_first_url">
+                        <attribute name="rules_first_url" source="value"/>
+                    </element>
+                    <element name="rules_first_text">
+                        <html name="rules_first_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                    <element name="rules_second_url">
+                        <attribute name="rules_second_url" source="value"/>
+                    </element>
+                    <element name="rules_second_text">
+                        <html name="rules_second_text" converter="Magento_PageBuilder/js/converter/html/tag-escaper" />
+                    </element>
+                </elements>
+            </appearance>
+        </appearances>
+    </type>
+</config>

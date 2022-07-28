@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Scandiweb_PageBuilderSocialBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderSocialBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Scandiweb_PageBuilderSocialBlock"/>
+</config>

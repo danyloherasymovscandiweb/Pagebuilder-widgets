@@ -1,0 +1,109 @@
+.SocialBlock {
+    max-width: 1380px;
+
+    &-SocialMedia {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        background-position: left top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        border-style: none;
+        border-width: 1px;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px;
+
+        &Title {
+            color: white;
+            padding: 5px 20px;
+            margin-inline: auto;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 60px;
+            letter-spacing: 0px;
+        }
+
+        &Slogan {
+            color: white;
+            padding: 5px;
+            margin-inline: auto;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 30px;
+            letter-spacing: 0px;
+        }
+
+        &List {
+            display: flex;
+            margin: auto;
+            width: 80%;
+
+            &Wrapper {
+                justify-content: flex-start;
+                display: flex;
+                flex-direction: row;
+                background-position: left top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                border-style: none;
+                width: 100%;
+                border-width: 1px;
+                border-radius: 0px;
+                margin-inline: auto;
+                margin-block-start: 10px;
+                margin-block-end: 0px;
+                padding: 0px;
+                align-self: stretch;
+            }
+
+            &Content {
+                border-style: none;
+                border-width: 1px;
+                border-radius: 0px;
+                padding: 0px;
+                text-align: center;
+                width: 20%;
+            }
+
+            &Text {
+                color: white;
+                font-size: 18px;
+                line-height: 24px;
+
+                &Holder {
+                    position: relative;
+                    margin-block-start: 20px;
+                    vertical-align: middle;
+                }
+            }
+
+            &Img {
+                margin: 0px auto;
+                border-style: none;
+                border-width: 1px;
+                border-radius: 0px;
+                max-width: 46px;
+                max-height: 88px;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            &Img:hover {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+
+            &Figure {
+                margin: 0px;
+                padding: 0px;
+                border-style: none;
+            }
+        }
+    }
+}

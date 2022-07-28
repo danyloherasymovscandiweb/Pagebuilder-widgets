@@ -1,0 +1,129 @@
+<!--
+/**
+ * Scandiweb_PageBuilderCategoryBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderCategoryBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <div translate="'Category Block'"></div>
+    <div class="CategoryBlock">
+        <div class="CategoryBlock-ColumnGroup">
+            <div class="CategoryBlock-ColumnHidden">
+                <span class="CategoryBlock-ColumnInv"></span>
+            </div>
+            <div class="CategoryBlock-ColumnVisible">
+                <div class="CategoryBlock-TitleBlock">
+                    <p class="CategoryBlock-TitleP">
+                        <span class="CategoryBlock-Title"
+                              attr="data.block_title.attributes"
+                              data-bind="liveEdit: { field: 'block_title', placeholder: $t('Enter Block Title') }">
+                        </span>
+                    </p>
+                    <p class="CategoryBlock-SubtitleP">
+                        <span class="CategoryBlock-Subtitle"
+                              attr="data.block_subtitle.attributes"
+                              data-bind="liveEdit: { field: 'block_subtitle', placeholder: $t('Enter Block Subitle') }">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="CategoryBlock-ColumnGroup">
+            <div class="CategoryBlock-ColumnBanner">
+                <div class="CategoryBlock-ImagePlaceholder">
+                    <a data-bind="href: data.block_image_url.attributes().value">
+                        <img
+                          class="CategoryBlock-Image"
+                          attr="data.block_image.attributes"
+                        />
+                    </a>
+                </div>
+                <div class="CategoryBlock-ButtonHolder">
+                    <div class="CategoryBlock-ButtonItem">
+                        <a class="CategoryBlock-Button"
+                           data-bind="href: data.block_button_url.attributes().value">
+                            <span class="CategoryBlock-ButtonText"
+                                  attr="data.block_button_text.attributes"
+                                  data-bind="liveEdit: { field: 'block_button_text', placeholder: $t('Enter Block Button Text') }">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="CategoryBlock-ColumnFirstGrid">
+                <div class="CategoryBlock-CategoryHolder">
+                    <a class="CategoryBlock-CategoryImageLink"
+                       data-bind="href: data.first_category_url.attributes().value">
+                        <img class="CategoryBlock-CategoryImage"
+                            attr="data.first_category_image.attributes"
+                        />
+                        <span class="CategoryBlock-CategoryCaptionFirst"
+                                    attr="data.first_category_caption.attributes"
+                                    data-bind="liveEdit: { field: 'first_category_caption', placeholder: $t('Enter First Category Caption') }">
+                        </span>
+                    </a>
+                </div>
+                <div class="CategoryBlock-CategoryHolder">
+                    <a class="CategoryBlock-CategoryImageLink"
+                       data-bind="href: data.second_category_url.attributes().value">
+                        <img class="CategoryBlock-CategoryImage"
+                            attr="data.second_category_image.attributes"
+                        />
+                        <span class="CategoryBlock-CategoryCaptionSecond"
+                                    attr="data.second_category_caption.attributes"
+                                    data-bind="liveEdit: { field: 'second_category_caption', placeholder: $t('Enter Second Category Caption') }">
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="CategoryBlock-ColumnSecondGrid">
+                <div class="CategoryBlock-CategoryHolder">
+                    <a class="CategoryBlock-CategoryImageLink"
+                       data-bind="href: data.third_category_url.attributes().value">
+                        <img class="CategoryBlock-CategoryImage"
+                            attr="data.third_category_image.attributes"
+                        />
+                        <span class="CategoryBlock-CategoryCaptionThird"
+                                    attr="data.third_category_caption.attributes"
+                                    data-bind="liveEdit: { field: 'third_category_caption', placeholder: $t('Enter Third Category Caption') }">
+                        </span>
+                    </a>
+                </div>
+                <div class="CategoryBlock-CategoryHolder">
+                    <a class="CategoryBlock-CategoryImageLink"
+                       data-bind="href: data.fourth_category_url.attributes().value">
+                        <img class="CategoryBlock-CategoryImage"
+                            attr="data.fourth_category_image.attributes"
+                        />
+                        <span class="CategoryBlock-CategoryCaptionFourth"
+                                    attr="data.fourth_category_caption.attributes"
+                                    data-bind="liveEdit: { field: 'fourth_category_caption', placeholder: $t('Enter Fourth Category Caption') }">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="CategoryBlock-ShopButtonHolder">
+            <div class="CategoryBlock-ShopButtonItem">
+                <a class="CategoryBlock-ShopButton"
+                   data-bind="href: data.shop_button_url.attributes().value"
+                >
+                    <span class="CategoryBlock-ShopButtonText"
+                          attr="data.shop_button_text.attributes"
+                          data-bind="liveEdit: { field: 'shop_button_text', placeholder: $t('Enter Shop Button Text') }">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <render args="getOptions().template" />
+</div>

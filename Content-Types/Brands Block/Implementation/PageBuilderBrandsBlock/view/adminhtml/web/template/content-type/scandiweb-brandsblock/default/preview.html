@@ -1,0 +1,78 @@
+<!--
+/**
+ * Scandiweb_PageBuilderBrandsBlock
+ *
+ * @category Scandiweb
+ * @package  Scandiweb_PageBuilderBrandsBlock
+ * @author   John Doe <info@scandiweb.com>
+ */
+-->
+
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <div translate="'Brands Block'"></div>
+    <div class="BrandsBlock">
+        <div class="BrandsBlock-FeaturedBrands">
+            <div class="BrandsBlock-FeaturedBrandsWrapper">
+                <div class="BrandsBlock-FeaturedBrandsColumn">
+                    <div class="BrandsBlock-FeaturedBrandsContent">
+                        <div class="BrandsBlock-FeaturedBrandsFigure">
+                            <a class="BrandsBlock-FeaturedBrandsLink"
+                                data-bind="href: data.first_brand_url.attributes().value"
+                            >
+                                <img class="BrandsBlock-FeaturedBrandsFigureImg"
+                                    attr="data.first_brand_img.attributes"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="BrandsBlock-FeaturedBrandsContent">
+                        <div class="BrandsBlock-FeaturedBrandsFigure">
+                            <a class="BrandsBlock-FeaturedBrandsLink"
+                                data-bind="href: data.second_brand_url.attributes().value"
+                            >
+                                <img class="BrandsBlock-FeaturedBrandsFigureImg"
+                                    attr="data.second_brand_img.attributes"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="BrandsBlock-FeaturedBrandsContent">
+                        <div class="BrandsBlock-FeaturedBrandsFigure">
+                            <a class="BrandsBlock-FeaturedBrandsLink"
+                                data-bind="href: data.third_brand_url.attributes().value"
+                            >
+                                <img class="BrandsBlock-FeaturedBrandsFigureImg"
+                                    attr="data.third_brand_img.attributes"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="BrandsBlock-FeaturedBrandsContent">
+                        <span class="BrandsBlock-Title"
+                            attr="data.block_title.attributes"
+                            data-bind="liveEdit: { field: 'block_title', placeholder: $t('Enter Block Title') }">
+                        </span>
+                        <div class="BrandsBlock-Actions">
+                            <div class="BrandsBlock-ActionsItem">
+                                <a class="BrandsBlock-ActionsButton"
+                                    data-bind="href: data.button_url.attributes().value"
+                                >
+                                    <span class="BrandsBlock-ActionsButtonText"
+                                          attr="data.button_text.attributes"
+                                          data-bind="liveEdit: { field: 'button_text', placeholder: $t('Enter Button Text') }">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <render args="getOptions().template" />
+</div>
