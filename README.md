@@ -17,7 +17,7 @@ For project-specific goals and implementation of unique features, the styles, lo
 
 This repository contains following blocks ready to use:
 
-1) Social Block: a block with a set of social media icons with adjustable description text and styles</b></a>
+<b>1) Social Block: a block with a set of social media icons with adjustable description text and styles</b>
 
   Desktop: 
   ![Screenshot from 2022-06-16 14-31-54](https://user-images.githubusercontent.com/102791059/179741658-ada12440-6a34-4307-a593-1b6bf0711b20.png)
@@ -26,7 +26,7 @@ This repository contains following blocks ready to use:
   ![Screenshot from 2022-06-16 14-32-04](https://user-images.githubusercontent.com/102791059/179741661-53f44e5b-1c6d-45bd-81a2-3e7c142516a0.png)
 
 
-2) Brands Block: selected brands representation block with a grid of adjustable pictures with adjustable title, button text, links and styles</b></a>
+<b>2) Brands Block: selected brands representation block with a grid of adjustable pictures with adjustable title, button text, links and styles</b>
 
   Desktop:
   ![Screenshot from 2022-06-16 12-27-20](https://user-images.githubusercontent.com/102791059/179740676-c8f4703c-bbc7-4b90-a5df-33fa4284edc1.png)
@@ -34,7 +34,7 @@ This repository contains following blocks ready to use:
   Mobile:
   ![Screenshot from 2022-06-16 12-27-30](https://user-images.githubusercontent.com/102791059/179740682-22123a38-167a-4604-8088-0020a7d01be5.png)
 
-3) Category Block: product categories representation block with an adjustable banner, grid of adjustable pictures with adjustable title, subtitle, button text, links and styles</b></a>
+<b>3) Category Block: product categories representation block with an adjustable banner, grid of adjustable pictures with adjustable title, subtitle, button text, links and styles</b>
 
   Desktop:
   ![Screenshot from 2022-06-16 13-59-58](https://user-images.githubusercontent.com/102791059/179740979-9ea7289e-2508-4147-9b17-8f8a8a261369.png)
@@ -42,7 +42,7 @@ This repository contains following blocks ready to use:
   Mobile:
   ![Screenshot from 2022-06-16 13-59-44](https://user-images.githubusercontent.com/102791059/179740976-dfb48c19-c0d0-4895-8d9e-db62c133a99c.png)
 
-4) Newsletter block: e-mail subscription block with built-in icon, adjustable title, slogan, e-mail placeholder text, links and rules text </b></a>
+<b>4) Newsletter block: e-mail subscription block with built-in icon, adjustable title, slogan, e-mail placeholder text, links and rules text </b>
 
   Desktop:
   ![Screenshot from 2022-06-15 15-18-03](https://user-images.githubusercontent.com/102791059/179740289-42d0ac0a-35af-4062-82c7-45597b09737c.png)
