@@ -1,7 +1,7 @@
 # Pagebuilder-content-types
 Collection of content-types for SW Pagebuilder (for ScandiPWA ONLY!)
 
-This repository consists of collection of various blocks, which were implemented/developed in the previous projects. These parts of codes are implemented as content-types - blocks, which can be set up and adjusted via CMS admin panel with little or no coding involved. Their key feature is live-editing in the admin panel, as well as preview option.
+This repository consists of collection of various blocks, to use as a base for future implementations. These parts of codes are implemented as widgets and conent-types - blocks, which can be set up and adjusted via CMS admin panel with little or no coding involved.
 
 For project-specific goals and implementation of unique features, the styles, logic and other parts of the content-type may be changed. They are made primarily in order to increase code re-usability inside among SW projects, as many of the projects we work on now and may work on in feature are likely to have common needs and require common solutions. Widgets allow developers who are looking to implement a particular block to choose ready-made solution, that can perfectly satisfy their project's needs with little adjustments.
 
