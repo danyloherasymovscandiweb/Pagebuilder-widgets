@@ -1,7 +1,7 @@
 # Pagebuilder-widgets
 Collection of widgets and content-types for Magento Pagebuilder (for ScandiPWA ONLY!)
 
-This repository consists of collection of various blocks, which were implemented/developed in the previous projects. These parts of codes are implemented as widgets and conent-types - blocks, which can be set up and adjusted via CMS admin panel with little or no coding involved.
+This repository consists of collection of various blocks, to use as a base for future implementations. These parts of codes are implemented as widgets and conent-types - blocks, which can be set up and adjusted via CMS admin panel with little or no coding involved.
 
 Both widgets and content-types are Magento extensions for creating content by dragging-and-dropping pre-built blocks of code. With little adjustments that reuires no coding, a user can simply add a necessary block and configure it with relevant data (texts, images, colors, links, etc). The main difference between the 2 is that content-type allow preview of the component in the admin panel, as well as live-editing features. They are harder to implement, too.
 
