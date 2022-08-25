@@ -1,5 +1,8 @@
 This widget implements a block of links to the project's social media. Can be implemented for any project that requires social media block.
 
+To see example of a Demo Widget with adjustable fields, follow this link:
+https://github.com/mertgulmus/demo-widget
+
 Contents:
 -	Title for the block (string)
 -	Subtitle/slogan for the block (string)
