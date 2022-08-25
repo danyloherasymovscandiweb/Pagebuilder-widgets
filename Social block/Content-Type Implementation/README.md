@@ -1,5 +1,8 @@
 This content-type implements a block of links to the project's social media. Can be implemented for any project that requires social media block.
 
+To see example of Demo Content-Type which implements adjustable fields, follow this link:
+https://github.com/danyloherasymovscandiweb/demo-content-type
+
 Contents:
 -	Title for the block (string)
 -	Subtitle/slogan for the block (string)
