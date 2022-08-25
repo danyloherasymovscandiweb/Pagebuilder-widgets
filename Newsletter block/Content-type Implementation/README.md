@@ -1,5 +1,8 @@
 This content-type implements a newsletter subscription block.
 
+To see example of Demo Content-Type which implements adjustable fields, follow this link:
+https://github.com/danyloherasymovscandiweb/demo-content-type
+
 Contents:
 -	Title for the newsletter (string)
 -	Subtitle/slogan (string)
