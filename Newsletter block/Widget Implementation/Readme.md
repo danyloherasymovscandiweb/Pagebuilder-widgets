@@ -1,5 +1,8 @@
 This widget implements a newsletter subscription block.
 
+To see example of a Demo Widget with adjustable fields, follow this link:
+https://github.com/mertgulmus/demo-widget
+
 Contents:
 -	Title for the newsletter (string)
 -	Subtitle/slogan (string)
