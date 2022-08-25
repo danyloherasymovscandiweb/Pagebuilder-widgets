@@ -1,5 +1,8 @@
 This content-type implements a block of categories of products. It can represent a few categories, and a banner of the section with its own button can lead to a special category (e.g. promo-campaign). “Shop now” button is intended to direct to all categories list
 
+To see example of Demo Content-Type which implements adjustable fields, follow this link:
+https://github.com/danyloherasymovscandiweb/demo-content-type
+
 Contents:
 -	Title for the block (string)
 -	Subtitle/slogan for the block (string)
