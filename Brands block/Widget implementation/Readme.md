@@ -1,5 +1,8 @@
 This widget implements a featured brands block. It may be helpful for a project, where certain brands/products are more important to show than others, and this block may be used to highlight those, meanwhile providing options to see all.
 
+To see example of a Demo Widget with adjustable fields, follow this link:
+https://github.com/mertgulmus/demo-widget
+
 Contents:
 -	Title for the block (string)
 -	First brand image (image)
