@@ -1,5 +1,8 @@
 This content-type implements a featured brands block. It may be helpful for a project, where certain brands/products are more important to show than others, and this block may be used to highlight those, meanwhile providing options to see all.
 
+To see example of Demo Content-Type which implements adjustable fields, follow this link:
+https://github.com/danyloherasymovscandiweb/demo-content-type
+
 Contents:
 -	Title for the block (string)
 -	First brand image (image)
