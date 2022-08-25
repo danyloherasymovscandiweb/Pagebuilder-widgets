@@ -1,5 +1,8 @@
 This widget implements a block of categories of products. It can represent a few categories, and a banner of the section with its own button can lead to a special category (e.g. promo-campaign). “Shop now” button is intended to direct to all categories list
 
+To see example of a Demo Widget with adjustable fields, follow this link:
+https://github.com/mertgulmus/demo-widget
+
 Contents:
 -	Title for the block (string)
 -	Subtitle/slogan for the block (string)
