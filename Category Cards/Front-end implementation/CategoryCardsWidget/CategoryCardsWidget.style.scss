@@ -1,0 +1,19 @@
+.Content {
+    &-ContentBlock {
+        margin: 3px;
+    }
+}
+
+.CategoryContainer div {
+    display: flex;
+}
+
+.CategoryCardsWidget {
+    &-WidgetImage {
+        .Image-Image {
+            position: relative;
+            height: auto;
+            width: auto;
+        }
+    }
+}
