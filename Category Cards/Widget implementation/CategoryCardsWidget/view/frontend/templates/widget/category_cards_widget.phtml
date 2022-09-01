@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author       Mariia Shulezhko <mariia.shulezhko@scandiweb.com>
+ * @copyright   Copyright (c) 2022 Scandiweb, Inc (http://scandiweb.com)
+ *
+ * @var $block Scandiweb\CategoryCardsWidget\Block\Widget\CategoryCardsWidget
+ */
+?>
+
+<widget type="CategoryCardsWidget"
+        category_name="<?= $escaper->escapeHtml($block->getCategoryObject()->getName()) ?>"
+        category_image="<?= $escaper->escapeHtml($block->getCategoryObject()->getImageUrl()) ?>"
+        category_country="<?= $escaper->escapeHtml($block->getCategoryObject()->getData('category_country')) ?>"
+        category_tagline="<?= $escaper->escapeHtml($block->getCategoryObject()->getData('category_tagline')) ?>"
+        is_sale="<?= $escaper->escapeHtml($block->getCategoryObject()->getData('is_sale')) ?>"
+        category_position="<?= $escaper->escapeHtml($block->getCategoryObject()->getData('category_position')) ?>"
+        category="<?= $escaper->escapeHtml($block->getCategoryObject()->getUrl()) ?>" >
+</widget>

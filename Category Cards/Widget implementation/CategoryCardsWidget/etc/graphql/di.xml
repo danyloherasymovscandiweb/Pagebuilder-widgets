@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Mariia Shulezhko <mariia.shulezhko@scandiweb.com | info@scandiweb.com>
+ * @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+ * @copyright Copyright (c) 2022 Scandiweb, Inc (https://scandiweb.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="ScandiPWA\CmsGraphQl\Model\Template\VirtualFilter" type="ScandiPWA\CmsGraphQl\Model\Template\Filter">
+        <arguments>
+            <argument name="availableFilters" xsi:type="array">
+                <item name="CategoryCardsWidget" xsi:type="string">Scandiweb\CategoryCardsWidget\Block\Widget\CategoryCards</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
